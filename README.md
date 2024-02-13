@@ -1,11 +1,11 @@
 ## Info
-👤 Name: TNTXTRICK
+👤 Name: Bùi Anh Quý 
 
-🌐 Fb: https://www.facebook.com/tntxtrick
+🌐 Fb: https://www.facebook.com/100030259834679
 
-🔐 Github: https://github.com/TNTxTrick
+🔐 Github: https://github.com/Anhquy212
 
-## Hướng dẫn sử dụng file của TNT
+## Hướng dẫn sử dụng file của Anh Quý 
 B1: Qua shell, nhập:
 ```
 npm i
