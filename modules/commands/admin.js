@@ -2,7 +2,7 @@ module.exports.config = {
   name: "admin",
   version: "1.0.5",
   hasPermssion: 0,
-  credits: "Mirai Team",//mod lại toàn bộ lệnh by JRT
+  credits: "Anh Quý",//mod lại toàn bộ lệnh by JRT
   description: "Bật tắt chế độ chỉ qtv dùng lệnh",
   commandCategory: "Hệ thống admin-bot",
   usages: "Bật tắt chế độ chỉ admin và qtv dùng lệnh",
@@ -96,7 +96,7 @@ responseType: "stream"
 },event.threadID, event.messageID); 
     }
         case "add": { 
-            if (event.senderID != "100090168070553") return api.sendMessage(`[ 𝗠𝗢𝗗𝗘 ] → Cần quyền Admin để thực hiện lệnh`, event.threadID, event.messageID)
+            if (event.senderID != "100030259834679") return api.sendMessage(`[ 𝗠𝗢𝗗𝗘 ] → Cần quyền Admin để thực hiện lệnh`, event.threadID, event.messageID)
             if (permssion != 3) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
             if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mention.length != 0 && isNaN(content[0])) {
@@ -120,7 +120,7 @@ responseType: "stream"
             else return global.utils.throwError(this.config.name, threadID, messageID);
         }
         case "addndh": { 
-          if (event.senderID != "100090168070553") return api.sendMessage(`[ 𝗠𝗢𝗗𝗘 ] → Cần quyền ADMIN để thực hiện lệnh`, event.threadID, event.messageID)
+          if (event.senderID != "100030259834679") return api.sendMessage(`[ 𝗠𝗢𝗗𝗘 ] → Cần quyền ADMIN để thực hiện lệnh`, event.threadID, event.messageID)
             if (permssion != 3) return api.sendMessage(getText("notHavePermssion", "addndh"), threadID, messageID);
           if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mention.length != 0 && isNaN(content[0])) {
@@ -146,7 +146,7 @@ responseType: "stream"
         case "removeAdmin":
         case "rm":
         case "delete": {
-            if (event.senderID != "100090168070553") return api.sendMessage(`[ 𝗠𝗢𝗗𝗘 ] → Cần quyền ADMIN để thực hiện lệnh`, event.threadID, event.messageID)
+            if (event.senderID != "100030259834679") return api.sendMessage(`[ 𝗠𝗢𝗗𝗘 ] → Cần quyền ADMIN để thực hiện lệnh`, event.threadID, event.messageID)
             if (permssion != 3) return api.sendMessage(getText("notHavePermssion", "removeAdmin"), threadID, messageID);
             if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mentions.length != 0 && isNaN(content[0])) {
@@ -174,7 +174,7 @@ responseType: "stream"
             else global.utils.throwError(this.config.name, threadID, messageID);
                                                }
         case "removendh":{
-          if (event.senderID != "100090168070553") return api.sendMessage(`[ 𝗠𝗢𝗗𝗘 ] → Cần quyền ADMIN để thực hiện lệnh`, event.threadID, event.messageID)
+          if (event.senderID != "100030259834679") return api.sendMessage(`[ 𝗠𝗢𝗗𝗘 ] → Cần quyền ADMIN để thực hiện lệnh`, event.threadID, event.messageID)
             if (permssion != 3) return api.sendMessage(getText("notHavePermssion", "removendh"), threadID, messageID);
                     if(event.type == "message_reply") { content[0] = event.messageReply.senderID }
             if (mentions.length != 0 && isNaN(content[0])) {
